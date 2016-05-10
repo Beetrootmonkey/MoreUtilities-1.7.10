@@ -8,6 +8,7 @@ import net.minecraft.entity.EntityAgeable;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.monster.EntitySpider;
 import net.minecraft.entity.passive.EntityHorse;
+import net.minecraft.entity.passive.EntitySheep;
 import net.minecraft.entity.passive.EntitySquid;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
@@ -50,6 +51,24 @@ public class EventHook
 				else
 				{
 					event.drops.add(new EntityItem(event.entity.worldObj, event.entity.posX, event.entity.posY, event.entity.posZ, new ItemStack(Items.raw_horse, amount)));
+				}
+			}
+			
+			
+		}
+		else if(event.entity instanceof EntitySheep)
+		{
+			if(!((EntityAgeable)event.entityLiving).isChild())
+			{
+				Random r = new Random();
+				int amount = r.nextInt(2 + event.lootingLevel) + 1;
+				if(event.entity.isBurning())
+				{
+					event.drops.add(new EntityItem(event.entity.worldObj, event.entity.posX, event.entity.posY, event.entity.posZ, new ItemStack(Items.cooked_mutton, amount)));
+				}
+				else
+				{
+					event.drops.add(new EntityItem(event.entity.worldObj, event.entity.posX, event.entity.posY, event.entity.posZ, new ItemStack(Items.raw_mutton, amount)));
 				}
 			}
 			

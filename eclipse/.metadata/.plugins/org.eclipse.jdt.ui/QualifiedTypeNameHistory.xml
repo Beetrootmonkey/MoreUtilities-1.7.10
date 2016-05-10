@@ -15,4 +15,6 @@
 <fullyQualifiedTypeName name="net.minecraft.item.ItemStack"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.passive.EntityHorse"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.EntityAgeable"/>
+<fullyQualifiedTypeName name="net.minecraft.item.Item"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.passive.EntitySheep"/>
 </qualifiedTypeNameHistroy>

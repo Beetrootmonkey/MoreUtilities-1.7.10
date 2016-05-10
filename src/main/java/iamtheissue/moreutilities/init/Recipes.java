@@ -17,7 +17,7 @@ public class Recipes
 		{
 			GameRegistry.addSmelting(new ItemStack(Item.getItemById(6), 1, i), new ItemStack(Items.charcoal_pellet, 2), 0.35f);
 		}
-		
+		GameRegistry.addSmelting(Items.raw_mutton, new ItemStack(Items.cooked_mutton), 0.35f);
 		
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(Items.coal_pellet, 8), new ItemStack(net.minecraft.init.Items.coal));

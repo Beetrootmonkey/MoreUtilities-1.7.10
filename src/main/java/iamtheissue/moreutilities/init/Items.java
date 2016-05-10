@@ -22,6 +22,8 @@ public class Items
 	public static Item raw_spider_leg;
 	public static Item cooked_spider_leg;
 	public static Item cooked_spider_eye;
+	public static Item raw_mutton;
+	public static Item cooked_mutton;
 	
 	public static Item coal_pellet;
 	public static Item charcoal_pellet;
@@ -36,6 +38,10 @@ public class Items
 		raw_spider_leg = new ItemPoisonous(1, 0.2f, 100, 0).setUnlocalizedName("raw_spider_leg").setTextureName(Reference.MOD_ID + ":raw_spider_leg");
 		cooked_spider_leg = new ItemFood(2,  2f, false).setUnlocalizedName("cooked_spider_leg").setTextureName(Reference.MOD_ID + ":cooked_spider_leg");
 		cooked_spider_eye = new ItemFood(2,  2f, false).setUnlocalizedName("cooked_spider_eye").setTextureName(Reference.MOD_ID + ":cooked_spider_eye");
+		raw_mutton = new ItemFood(2, 1.2f, true).setUnlocalizedName("raw_mutton").setTextureName(Reference.MOD_ID + ":raw_mutton");
+		cooked_mutton = new ItemFood(6, 9.6f, true).setUnlocalizedName("cooked_mutton").setTextureName(Reference.MOD_ID + ":cooked_mutton");
+		
+		
 		
 		coal_pellet = new ItemFuelPellet(200).setUnlocalizedName("coal_pellet").setTextureName(Reference.MOD_ID + ":coal_pellet");
 		charcoal_pellet = new ItemFuelPellet(200).setUnlocalizedName("charcoal_pellet").setTextureName(Reference.MOD_ID + ":charcoal_pellet");
@@ -52,6 +58,8 @@ public class Items
 		GameRegistry.registerItem(raw_spider_leg, raw_spider_leg.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(cooked_spider_leg, cooked_spider_leg.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(cooked_spider_eye, cooked_spider_eye.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(raw_mutton, raw_mutton.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(cooked_mutton, cooked_mutton.getUnlocalizedName().substring(5));
 		
 		GameRegistry.registerItem(coal_pellet, coal_pellet.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(charcoal_pellet, charcoal_pellet.getUnlocalizedName().substring(5));
