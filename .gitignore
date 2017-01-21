@@ -1,11 +1,11 @@
 ## Custom stuff
-eclipse/.metadata/
-eclipse/.recommenders/
-eclipse/crash-reports/
-eclipse/logs/
-eclipse/saves/
-.gradle/
-.settings/
+eclipse/.metadata/*
+eclipse/.recommenders/*
+eclipse/crash-reports/*
+eclipse/logs/*
+eclipse/saves/*
+.gradle/*
+.settings/*
 
 ## auto-generated stuff
 # Windows image file caches
