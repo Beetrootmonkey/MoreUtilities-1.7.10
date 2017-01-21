@@ -5,6 +5,7 @@ eclipse/crash-reports/
 eclipse/logs/
 eclipse/saves/
 .gradle/
+.settings/
 
 ## auto-generated stuff
 # Windows image file caches
