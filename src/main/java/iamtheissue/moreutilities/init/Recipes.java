@@ -2,6 +2,7 @@ package iamtheissue.moreutilities.init;
 
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.registry.GameRegistry;
+import iamtheissue.moreutilities.config.Features;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
@@ -12,21 +13,23 @@ public class Recipes
 		GameRegistry.addSmelting(Items.raw_squid, new ItemStack(Items.cooked_squid), 0.35f);
 		GameRegistry.addSmelting(Items.raw_horse, new ItemStack(Items.cooked_horse), 0.35f);
 		GameRegistry.addSmelting(Items.raw_spider_leg, new ItemStack(Items.cooked_spider_leg), 0.35f);
-		GameRegistry.addSmelting(new ItemStack(Item.getItemById(375)), new ItemStack(Items.cooked_spider_eye), 0.35f);
-		for(int i = 0; i < 6; i++)
-		{
-			GameRegistry.addSmelting(new ItemStack(Item.getItemById(6), 1, i), new ItemStack(Items.charcoal_pellet, 2), 0.35f);
-		}
+		GameRegistry.addSmelting(new ItemStack(net.minecraft.init.Items.spider_eye), new ItemStack(Items.cooked_spider_eye), 0.35f);
 		GameRegistry.addSmelting(Items.raw_mutton, new ItemStack(Items.cooked_mutton), 0.35f);
 		
+		if(Features.coalPellet)
+		{
+			GameRegistry.addShapelessRecipe(new ItemStack(Items.coal_pellet, 8), new ItemStack(net.minecraft.init.Items.coal));
+			GameRegistry.addShapelessRecipe(new ItemStack(net.minecraft.init.Items.coal), new ItemStack(Items.coal_pellet), new ItemStack(Items.coal_pellet), new ItemStack(Items.coal_pellet), new ItemStack(Items.coal_pellet), new ItemStack(Items.coal_pellet), new ItemStack(Items.coal_pellet), new ItemStack(Items.coal_pellet), new ItemStack(Items.coal_pellet));
+		}
+		if(Features.charcoalPellet)
+		{
+			GameRegistry.addShapelessRecipe(new ItemStack(Items.charcoal_pellet, 8), new ItemStack(net.minecraft.init.Items.coal, 1, 1));
+			GameRegistry.addShapelessRecipe(new ItemStack(net.minecraft.init.Items.coal, 1, 1), new ItemStack(Items.charcoal_pellet), new ItemStack(Items.charcoal_pellet), new ItemStack(Items.charcoal_pellet), new ItemStack(Items.charcoal_pellet), new ItemStack(Items.charcoal_pellet), new ItemStack(Items.charcoal_pellet), new ItemStack(Items.charcoal_pellet), new ItemStack(Items.charcoal_pellet));
+		}
 		
-		GameRegistry.addShapelessRecipe(new ItemStack(Items.coal_pellet, 8), new ItemStack(net.minecraft.init.Items.coal));
-		GameRegistry.addShapelessRecipe(new ItemStack(Items.charcoal_pellet, 8), new ItemStack(net.minecraft.init.Items.coal, 1, 1));
 		
-		GameRegistry.addShapelessRecipe(new ItemStack(net.minecraft.init.Items.coal), new ItemStack(Items.coal_pellet), new ItemStack(Items.coal_pellet), new ItemStack(Items.coal_pellet), new ItemStack(Items.coal_pellet), new ItemStack(Items.coal_pellet), new ItemStack(Items.coal_pellet), new ItemStack(Items.coal_pellet), new ItemStack(Items.coal_pellet));
-		GameRegistry.addShapelessRecipe(new ItemStack(net.minecraft.init.Items.coal, 1, 1), new ItemStack(Items.charcoal_pellet), new ItemStack(Items.charcoal_pellet), new ItemStack(Items.charcoal_pellet), new ItemStack(Items.charcoal_pellet), new ItemStack(Items.charcoal_pellet), new ItemStack(Items.charcoal_pellet), new ItemStack(Items.charcoal_pellet), new ItemStack(Items.charcoal_pellet));
 		
-		GameRegistry.addShapedRecipe(new ItemStack(net.minecraft.init.Items.stick, 4), new Object[]{"R", "R", 'R', net.minecraft.init.Items.reeds});
+						
 		
 		/*
 		if(Loader.isModLoaded("Thaumcraft"))

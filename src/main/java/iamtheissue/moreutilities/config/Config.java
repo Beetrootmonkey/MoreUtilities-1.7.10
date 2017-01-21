@@ -28,7 +28,6 @@ public class Config
         Features.squidDrops = config.get(CATEGORY_DROPS, "Squid", true).getBoolean(true);
         
         config.setCategoryComment(CATEGORY_RECIPES, "If false, disables this recipe.");
-        Features.reedsToSticks = config.get(CATEGORY_RECIPES, "ReedsToSticks", true).getBoolean(true);
         Features.coalPellet = config.get(CATEGORY_RECIPES, "CoalPellet", true).getBoolean(true);
         Features.charcoalPellet = config.get(CATEGORY_RECIPES, "CharcoalPellet", true).getBoolean(true);
         
