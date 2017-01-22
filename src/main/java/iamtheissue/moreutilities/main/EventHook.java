@@ -3,6 +3,7 @@ package iamtheissue.moreutilities.main;
 import java.util.Random;
 
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import iamtheissue.moreutilities.config.Features;
 import iamtheissue.moreutilities.init.Items;
 import net.minecraft.entity.EntityAgeable;
 import net.minecraft.entity.item.EntityItem;
@@ -21,7 +22,7 @@ public class EventHook
 	@SubscribeEvent
 	public void entityDies(LivingDropsEvent event)
 	{
-		if(event.entity instanceof EntitySquid)
+		if(event.entity instanceof EntitySquid && Features.squidDrops)
 		{
 			// Adds 1 raw squid to the drop list
 			// Adds 1 cooked squid instead if the squid is burning
@@ -35,7 +36,7 @@ public class EventHook
 			}
 			
 		}
-		else if(event.entity instanceof EntityHorse)
+		else if(event.entity instanceof EntityHorse && Features.horseDrops)
 		{
 			// Adds 1-3 (+ looting level) raw horse meat to the drop list
 			// Adds 1-3 (+ looting level) cooked horse meat instead if the horse is burning
@@ -56,7 +57,7 @@ public class EventHook
 			
 			
 		}
-		else if(event.entity instanceof EntitySheep)
+		else if(event.entity instanceof EntitySheep && Features.sheepDrops)
 		{
 			if(!((EntityAgeable)event.entityLiving).isChild())
 			{
@@ -74,7 +75,7 @@ public class EventHook
 			
 			
 		}
-		else if(event.entity instanceof EntitySpider)
+		else if(event.entity instanceof EntitySpider && Features.spiderDrops)
 		{
 			Random r = new Random();
 			int amount = r.nextInt(3 + event.lootingLevel);
