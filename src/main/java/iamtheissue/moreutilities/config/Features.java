@@ -8,5 +8,6 @@ public class Features
 	public static boolean horseDrops = true;
 	public static boolean coalPellet = true;
 	public static boolean charcoalPellet = true;
+	public static boolean torch = true;
 	
 }

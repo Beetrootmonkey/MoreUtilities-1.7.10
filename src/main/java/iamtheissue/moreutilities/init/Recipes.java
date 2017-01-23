@@ -26,6 +26,11 @@ public class Recipes
 			GameRegistry.addShapelessRecipe(new ItemStack(Items.charcoal_pellet, 8), new ItemStack(net.minecraft.init.Items.coal, 1, 1));
 			GameRegistry.addShapelessRecipe(new ItemStack(net.minecraft.init.Items.coal, 1, 1), new ItemStack(Items.charcoal_pellet), new ItemStack(Items.charcoal_pellet), new ItemStack(Items.charcoal_pellet), new ItemStack(Items.charcoal_pellet), new ItemStack(Items.charcoal_pellet), new ItemStack(Items.charcoal_pellet), new ItemStack(Items.charcoal_pellet), new ItemStack(Items.charcoal_pellet));
 		}
+		if(Features.torch)
+		{
+			GameRegistry.addShapedRecipe(new ItemStack(net.minecraft.init.Blocks.torch), new Object[]{"C", "S", 'C', Items.coal_pellet, 'S', net.minecraft.init.Items.stick});
+			GameRegistry.addShapedRecipe(new ItemStack(net.minecraft.init.Blocks.torch), new Object[]{"C", "S", 'C', Items.charcoal_pellet, 'S', net.minecraft.init.Items.stick});
+		}
 		
 		
 		
