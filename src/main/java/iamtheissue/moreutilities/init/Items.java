@@ -31,15 +31,15 @@ public class Items
 		
 	public static void init()
 	{
-		raw_squid = new ItemFood(2, 0.4f, false).setUnlocalizedName("raw_squid").setTextureName(Reference.MOD_ID + ":raw_squid");
-		cooked_squid = new ItemFood(5, 1.2f, false).setUnlocalizedName("cooked_squid").setTextureName(Reference.MOD_ID + ":cooked_squid");
-		raw_horse = new ItemFood(3, 0.8f, true).setUnlocalizedName("raw_horse").setTextureName(Reference.MOD_ID + ":raw_horse");
-		cooked_horse = new ItemFood(8, 1.5f, true).setUnlocalizedName("cooked_horse").setTextureName(Reference.MOD_ID + ":cooked_horse");
-		raw_spider_leg = new ItemPoisonous(1, 0.2f, 100, 0).setUnlocalizedName("raw_spider_leg").setTextureName(Reference.MOD_ID + ":raw_spider_leg");
-		cooked_spider_leg = new ItemFood(2,  1f, false).setUnlocalizedName("cooked_spider_leg").setTextureName(Reference.MOD_ID + ":cooked_spider_leg");
-		cooked_spider_eye = new ItemFood(2,  1f, false).setUnlocalizedName("cooked_spider_eye").setTextureName(Reference.MOD_ID + ":cooked_spider_eye");
-		raw_mutton = new ItemFood(2, 0.7f, true).setUnlocalizedName("raw_mutton").setTextureName(Reference.MOD_ID + ":raw_mutton");
-		cooked_mutton = new ItemFood(6, 1.5f, true).setUnlocalizedName("cooked_mutton").setTextureName(Reference.MOD_ID + ":cooked_mutton");
+		raw_squid = new ItemFood(2, 0.2f, false).setUnlocalizedName("raw_squid").setTextureName(Reference.MOD_ID + ":raw_squid");
+		cooked_squid = new ItemFood(5, 0.6f, false).setUnlocalizedName("cooked_squid").setTextureName(Reference.MOD_ID + ":cooked_squid");
+		raw_horse = new ItemFood(3, 0.4f, true).setUnlocalizedName("raw_horse").setTextureName(Reference.MOD_ID + ":raw_horse");
+		cooked_horse = new ItemFood(8, 0.75f, true).setUnlocalizedName("cooked_horse").setTextureName(Reference.MOD_ID + ":cooked_horse");
+		raw_spider_leg = new ItemPoisonous(1, 0.1f, 100, 0).setUnlocalizedName("raw_spider_leg").setTextureName(Reference.MOD_ID + ":raw_spider_leg");
+		cooked_spider_leg = new ItemFood(2,  0.5f, false).setUnlocalizedName("cooked_spider_leg").setTextureName(Reference.MOD_ID + ":cooked_spider_leg");
+		cooked_spider_eye = new ItemFood(2,  0.5f, false).setUnlocalizedName("cooked_spider_eye").setTextureName(Reference.MOD_ID + ":cooked_spider_eye");
+		raw_mutton = new ItemFood(2, 0.3f, true).setUnlocalizedName("raw_mutton").setTextureName(Reference.MOD_ID + ":raw_mutton");
+		cooked_mutton = new ItemFood(6, 0.7f, true).setUnlocalizedName("cooked_mutton").setTextureName(Reference.MOD_ID + ":cooked_mutton");
 		
 		
 		
