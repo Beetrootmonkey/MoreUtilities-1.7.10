@@ -49,7 +49,7 @@ public class Recipes
 			// 6-12 flour, av. 9
 			GameRegistry.addShapelessRecipe(new ItemStack(Items.flour, 2), new ItemStack(net.minecraft.init.Items.wheat_seeds));
 			// 2-4 dough, av. 3
-			GameRegistry.addShapedRecipe(new ItemStack(Items.dough), new ItemStack(Items.flour), new ItemStack(Items.flour), new ItemStack(Items.flour));
+			GameRegistry.addShapelessRecipe(new ItemStack(Items.dough), new ItemStack(Items.flour), new ItemStack(Items.flour), new ItemStack(Items.flour));
 			// 2-4 bread, av. 3 vs 1-4 cooked potatoes, av. 2.5
 			GameRegistry.addSmelting(Items.dough, new ItemStack(net.minecraft.init.Items.bread), 0.35f);
 		}
