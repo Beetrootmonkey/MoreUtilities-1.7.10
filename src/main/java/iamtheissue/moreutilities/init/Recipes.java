@@ -42,7 +42,7 @@ public class Recipes
 		if(Features.jellyCube)
 		{
 			GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.jelly_cube), "slimeball", new ItemStack(net.minecraft.init.Items.sugar)));
-			GameRegistry.addSmelting(Items.gelatin, new ItemStack(net.minecraft.init.Items.dye, 1, 15), 0.35f);
+			GameRegistry.addSmelting(new ItemStack(net.minecraft.init.Items.dye, 1, 15), new ItemStack(Items.gelatin), 0.35f);
 		}
 		if(Features.altBread)
 		{
