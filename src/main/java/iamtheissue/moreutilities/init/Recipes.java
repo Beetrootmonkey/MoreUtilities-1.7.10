@@ -1,10 +1,17 @@
 package iamtheissue.moreutilities.init;
 
+import java.util.ArrayList;
+
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.registry.GameRegistry;
 import iamtheissue.moreutilities.config.Features;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.CraftingManager;
+import net.minecraft.item.crafting.FurnaceRecipes;
+import net.minecraft.item.crafting.IRecipe;
+import net.minecraft.item.crafting.ShapedRecipes;
+import net.minecraft.item.crafting.ShapelessRecipes;
 
 public class Recipes
 {
@@ -35,7 +42,17 @@ public class Recipes
 		{
 			GameRegistry.addShapelessRecipe(new ItemStack(Items.jelly_cube), new ItemStack(net.minecraft.init.Items.slime_ball), new ItemStack(net.minecraft.init.Items.sugar));
 		}
-		
+		if(Features.altBread)
+		{
+			// 3-6 seeds, av. 4.5 vs 1-4 potatoes, av. 2.5
+			GameRegistry.addShapelessRecipe(new ItemStack(net.minecraft.init.Items.wheat_seeds, 3), new ItemStack(net.minecraft.init.Items.wheat));
+			// 6-12 flour, av. 9
+			GameRegistry.addShapelessRecipe(new ItemStack(Items.flour, 2), new ItemStack(net.minecraft.init.Items.wheat_seeds));
+			// 2-4 dough, av. 3
+			GameRegistry.addShapedRecipe(new ItemStack(Items.dough), new ItemStack(Items.flour), new ItemStack(Items.flour), new ItemStack(Items.flour));
+			// 2-4 bread, av. 3 vs 1-4 cooked potatoes, av. 2.5
+			GameRegistry.addSmelting(Items.dough, new ItemStack(net.minecraft.init.Items.bread), 0.35f);
+		}
 		
 						
 		
@@ -85,4 +102,6 @@ public class Recipes
     {
         
     }
+	
+	
 }
