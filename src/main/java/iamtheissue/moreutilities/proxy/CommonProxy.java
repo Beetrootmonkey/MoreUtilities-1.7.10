@@ -17,6 +17,7 @@ public class CommonProxy {
 		Blocks.register();
 		Items.init();
 		Items.register();
+		Items.oreRegistration();
 	}
 
 	public void init(FMLInitializationEvent e) {

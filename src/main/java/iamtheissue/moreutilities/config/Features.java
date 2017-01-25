@@ -11,5 +11,6 @@ public class Features
 	public static boolean torch = true;
 	public static boolean jellyCube = true;
 	public static boolean altBread = true;
+	public static boolean easyPotions = true;
 	
 }

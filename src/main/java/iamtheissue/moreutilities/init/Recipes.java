@@ -12,6 +12,7 @@ import net.minecraft.item.crafting.FurnaceRecipes;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.item.crafting.ShapedRecipes;
 import net.minecraft.item.crafting.ShapelessRecipes;
+import net.minecraftforge.oredict.ShapelessOreRecipe;
 
 public class Recipes
 {
@@ -40,7 +41,8 @@ public class Recipes
 		}
 		if(Features.jellyCube)
 		{
-			GameRegistry.addShapelessRecipe(new ItemStack(Items.jelly_cube), new ItemStack(net.minecraft.init.Items.slime_ball), new ItemStack(net.minecraft.init.Items.sugar));
+			GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.jelly_cube), "slimeball", new ItemStack(net.minecraft.init.Items.sugar)));
+			GameRegistry.addSmelting(Items.gelatin, new ItemStack(net.minecraft.init.Items.dye, 1, 15), 0.35f);
 		}
 		if(Features.altBread)
 		{
@@ -52,6 +54,22 @@ public class Recipes
 			GameRegistry.addShapelessRecipe(new ItemStack(Items.dough), new ItemStack(Items.flour), new ItemStack(Items.flour), new ItemStack(Items.flour));
 			// 2-4 bread, av. 3 vs 1-4 cooked potatoes, av. 2.5
 			GameRegistry.addSmelting(Items.dough, new ItemStack(net.minecraft.init.Items.bread), 0.35f);
+		}
+		if(Features.easyPotions)
+		{
+			GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.jelly_cube_mining), "slimeball", new ItemStack(net.minecraft.init.Items.sugar), new ItemStack(net.minecraft.init.Items.gold_ingot)));
+			GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.jelly_cube_combat), "slimeball", new ItemStack(net.minecraft.init.Items.sugar), new ItemStack(net.minecraft.init.Items.blaze_powder)));
+			GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.jelly_cube_survival), "slimeball", new ItemStack(net.minecraft.init.Items.sugar), new ItemStack(net.minecraft.init.Items.compass)));
+			GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.jelly_cube_sneaking), "slimeball", new ItemStack(net.minecraft.init.Items.sugar), new ItemStack(net.minecraft.init.Items.poisonous_potato)));
+			
+			GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.jelly_cube_mining2), "slimeball", new ItemStack(net.minecraft.init.Items.sugar)
+					, "dustRedstone", "dustGlowstone", new ItemStack(net.minecraft.init.Items.gold_ingot)));
+			GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.jelly_cube_combat2), "slimeball", new ItemStack(net.minecraft.init.Items.sugar)
+					, "dustRedstone", "dustGlowstone", new ItemStack(net.minecraft.init.Items.blaze_powder)));
+			GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.jelly_cube_survival2), "slimeball", new ItemStack(net.minecraft.init.Items.sugar)
+					, "dustRedstone", "dustGlowstone", new ItemStack(net.minecraft.init.Items.compass)));
+			GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.jelly_cube_sneaking2), "slimeball", new ItemStack(net.minecraft.init.Items.sugar)
+					, "dustRedstone", "dustGlowstone", new ItemStack(net.minecraft.init.Items.poisonous_potato)));
 		}
 		
 						
@@ -98,10 +116,7 @@ public class Recipes
 		*/
 	}
 	
-	public static void oreRegistration()
-    {
-        
-    }
+	
 	
 	
 }
