@@ -10,5 +10,6 @@ public class Features
 	public static boolean charcoalPellet = true;
 	public static boolean torch = true;
 	public static boolean jellyCube = true;
+	public static boolean altBread = true;
 	
 }

@@ -25,6 +25,8 @@ public class Items
 	public static Item raw_mutton;
 	public static Item cooked_mutton;
 	public static Item jelly_cube;
+	public static Item flour;
+	public static Item dough;
 	
 	public static Item coal_pellet;
 	public static Item charcoal_pellet;
@@ -42,7 +44,8 @@ public class Items
 		raw_mutton = new ItemFood(2, 0.3f, true).setUnlocalizedName("raw_mutton").setTextureName(Reference.MOD_ID + ":raw_mutton");
 		cooked_mutton = new ItemFood(6, 0.65f, true).setUnlocalizedName("cooked_mutton").setTextureName(Reference.MOD_ID + ":cooked_mutton");
 		jelly_cube = new ItemFood(3, 1f, false).setUnlocalizedName("jelly_cube").setTextureName(Reference.MOD_ID + ":jelly_cube");
-		
+		flour = new Item().setUnlocalizedName("flour").setTextureName(Reference.MOD_ID + ":flour");
+		dough = new Item().setUnlocalizedName("dough").setTextureName(Reference.MOD_ID + ":dough");
 		
 		
 		coal_pellet = new ItemFuelPellet(200).setUnlocalizedName("coal_pellet").setTextureName(Reference.MOD_ID + ":coal_pellet");
@@ -51,21 +54,28 @@ public class Items
 		
 	}
 	
+	private static void registerItem(Item item)
+	{
+		GameRegistry.registerItem(item, item.getUnlocalizedName().substring(5));
+	}
+	
 	public static void register()
 	{
-		GameRegistry.registerItem(raw_squid, raw_squid.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(cooked_squid, cooked_squid.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(raw_horse, raw_horse.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(cooked_horse, cooked_horse.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(raw_spider_leg, raw_spider_leg.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(cooked_spider_leg, cooked_spider_leg.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(cooked_spider_eye, cooked_spider_eye.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(raw_mutton, raw_mutton.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(cooked_mutton, cooked_mutton.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(jelly_cube, jelly_cube.getUnlocalizedName().substring(5));
+		registerItem(raw_squid);
+		registerItem(cooked_squid);
+		registerItem(raw_horse);
+		registerItem(cooked_horse);
+		registerItem(raw_spider_leg);
+		registerItem(cooked_spider_leg);
+		registerItem(cooked_spider_eye);
+		registerItem(raw_mutton);
+		registerItem(cooked_mutton);
+		registerItem(jelly_cube);
+		registerItem(flour);
+		registerItem(dough);
 		
-		GameRegistry.registerItem(coal_pellet, coal_pellet.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(charcoal_pellet, charcoal_pellet.getUnlocalizedName().substring(5));
+		registerItem(coal_pellet);
+		registerItem(charcoal_pellet);
 		
 		
 		}
