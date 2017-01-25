@@ -31,7 +31,10 @@ public class Recipes
 			GameRegistry.addShapedRecipe(new ItemStack(net.minecraft.init.Blocks.torch), new Object[]{"C", "S", 'C', Items.coal_pellet, 'S', net.minecraft.init.Items.stick});
 			GameRegistry.addShapedRecipe(new ItemStack(net.minecraft.init.Blocks.torch), new Object[]{"C", "S", 'C', Items.charcoal_pellet, 'S', net.minecraft.init.Items.stick});
 		}
-		
+		if(Features.jellyCube)
+		{
+			GameRegistry.addShapelessRecipe(new ItemStack(Items.jelly_cube), new ItemStack(net.minecraft.init.Items.slime_ball), new ItemStack(net.minecraft.init.Items.sugar));
+		}
 		
 		
 						

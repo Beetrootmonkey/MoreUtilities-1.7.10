@@ -31,6 +31,7 @@ public class Config
         Features.coalPellet = config.get(CATEGORY_RECIPES, "CoalPellet", true).getBoolean(true);
         Features.charcoalPellet = config.get(CATEGORY_RECIPES, "CharcoalPellet", true).getBoolean(true);
         Features.torch = config.get(CATEGORY_RECIPES, "Torch", true).getBoolean(true);
+        Features.jellyCube = config.get(CATEGORY_RECIPES, "JellyCube", true).getBoolean(true);
         
 
         config.save();
