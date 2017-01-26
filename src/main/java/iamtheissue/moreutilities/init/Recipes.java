@@ -57,18 +57,13 @@ public class Recipes
 		}
 		if(Features.easyPotions)
 		{
-			GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.jelly_cube_mining), "slimeball", new ItemStack(net.minecraft.init.Items.sugar), new ItemStack(net.minecraft.init.Items.gold_ingot)));
-			GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.jelly_cube_combat), "slimeball", new ItemStack(net.minecraft.init.Items.sugar), new ItemStack(net.minecraft.init.Items.blaze_powder)));
-			GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.jelly_cube_survival), "slimeball", new ItemStack(net.minecraft.init.Items.sugar), new ItemStack(net.minecraft.init.Items.compass)));
-			GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.jelly_cube_sneaking), "slimeball", new ItemStack(net.minecraft.init.Items.sugar), new ItemStack(net.minecraft.init.Items.poisonous_potato)));
-			
-			GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.jelly_cube_mining2), "slimeball", new ItemStack(net.minecraft.init.Items.sugar)
+			GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.jelly_cube_mining), "slimeball", new ItemStack(net.minecraft.init.Items.sugar)
 					, "dustRedstone", "dustGlowstone", new ItemStack(net.minecraft.init.Items.gold_ingot)));
-			GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.jelly_cube_combat2), "slimeball", new ItemStack(net.minecraft.init.Items.sugar)
+			GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.jelly_cube_combat), "slimeball", new ItemStack(net.minecraft.init.Items.sugar)
 					, "dustRedstone", "dustGlowstone", new ItemStack(net.minecraft.init.Items.blaze_powder)));
-			GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.jelly_cube_survival2), "slimeball", new ItemStack(net.minecraft.init.Items.sugar)
+			GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.jelly_cube_survival), "slimeball", new ItemStack(net.minecraft.init.Items.sugar)
 					, "dustRedstone", "dustGlowstone", new ItemStack(net.minecraft.init.Items.compass)));
-			GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.jelly_cube_sneaking2), "slimeball", new ItemStack(net.minecraft.init.Items.sugar)
+			GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.jelly_cube_sneaking), "slimeball", new ItemStack(net.minecraft.init.Items.sugar)
 					, "dustRedstone", "dustGlowstone", new ItemStack(net.minecraft.init.Items.poisonous_potato)));
 		}
 		

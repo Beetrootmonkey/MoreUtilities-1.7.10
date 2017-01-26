@@ -33,10 +33,6 @@ public class Items
 	public static Item jelly_cube_combat;
 	public static Item jelly_cube_survival;
 	public static Item jelly_cube_sneaking;
-	public static Item jelly_cube_mining2;
-	public static Item jelly_cube_combat2;
-	public static Item jelly_cube_survival2;
-	public static Item jelly_cube_sneaking2;
 	
 	public static Item coal_pellet;
 	public static Item charcoal_pellet;
@@ -57,14 +53,10 @@ public class Items
 		flour = new Item().setUnlocalizedName("flour").setTextureName(Reference.MOD_ID + ":flour");
 		dough = new Item().setUnlocalizedName("dough").setTextureName(Reference.MOD_ID + ":dough");
 		gelatin = new Item().setUnlocalizedName("gelatin").setTextureName(Reference.MOD_ID + ":gelatin");
-		jelly_cube_mining = new ItemBuff(3, 1f, 1200, 0, 1, 3, 16).setUnlocalizedName("jelly_cube_mining").setTextureName(Reference.MOD_ID + ":jelly_cube_mining");
-		jelly_cube_combat = new ItemBuff(3, 1f, 1200, 0, 5, 10, 11).setUnlocalizedName("jelly_cube_combat").setTextureName(Reference.MOD_ID + ":jelly_cube_combat");
-		jelly_cube_survival = new ItemBuff(3, 1f, 1200, 0, 8, 12, 13).setUnlocalizedName("jelly_cube_survival").setTextureName(Reference.MOD_ID + ":jelly_cube_survival");
-		jelly_cube_sneaking = new ItemBuff(3, 1f, 1200, 0, 1, 8, 14).setUnlocalizedName("jelly_cube_sneaking").setTextureName(Reference.MOD_ID + ":jelly_cube_sneaking");
-		jelly_cube_mining2 = new ItemBuff(4, 1f, 2400, 1, 1, 3, 16).setUnlocalizedName("jelly_cube_mining2").setTextureName(Reference.MOD_ID + ":jelly_cube_mining2");
-		jelly_cube_combat2 = new ItemBuff(4, 1f, 2400, 1, 5, 10, 11).setUnlocalizedName("jelly_cube_combat2").setTextureName(Reference.MOD_ID + ":jelly_cube_combat2");
-		jelly_cube_survival2 = new ItemBuff(4, 1f, 2400, 1, 8, 12, 13).setUnlocalizedName("jelly_cube_survival2").setTextureName(Reference.MOD_ID + ":jelly_cube_survival2");
-		jelly_cube_sneaking2 = new ItemBuff(4, 1f, 2400, 1, 1, 8, 14).setUnlocalizedName("jelly_cube_sneaking2").setTextureName(Reference.MOD_ID + ":jelly_cube_sneaking2");
+		jelly_cube_mining = new ItemBuff(4, 1f, 2400, 1, 1, 3, 16).setUnlocalizedName("jelly_cube_mining").setTextureName(Reference.MOD_ID + ":jelly_cube_mining");
+		jelly_cube_combat = new ItemBuff(4, 1f, 2400, 1, 5, 10, 11).setUnlocalizedName("jelly_cube_combat").setTextureName(Reference.MOD_ID + ":jelly_cube_combat");
+		jelly_cube_survival = new ItemBuff(4, 1f, 2400, 1, 8, 12, 13).setUnlocalizedName("jelly_cube_survival").setTextureName(Reference.MOD_ID + ":jelly_cube_survival");
+		jelly_cube_sneaking = new ItemBuff(4, 1f, 2400, 1, 1, 8, 14).setUnlocalizedName("jelly_cube_sneaking").setTextureName(Reference.MOD_ID + ":jelly_cube_sneaking");
 		
 		coal_pellet = new ItemFuelPellet(200).setUnlocalizedName("coal_pellet").setTextureName(Reference.MOD_ID + ":coal_pellet");
 		charcoal_pellet = new ItemFuelPellet(200).setUnlocalizedName("charcoal_pellet").setTextureName(Reference.MOD_ID + ":charcoal_pellet");
@@ -96,10 +88,6 @@ public class Items
 		registerItem(jelly_cube_combat);
 		registerItem(jelly_cube_survival);
 		registerItem(jelly_cube_sneaking);
-		registerItem(jelly_cube_mining2);
-		registerItem(jelly_cube_combat2);
-		registerItem(jelly_cube_survival2);
-		registerItem(jelly_cube_sneaking2);
 		
 		registerItem(coal_pellet);
 		registerItem(charcoal_pellet);
