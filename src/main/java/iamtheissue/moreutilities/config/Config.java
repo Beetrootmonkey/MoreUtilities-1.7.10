@@ -34,7 +34,8 @@ public class Config
         Features.jellyCube = config.get(CATEGORY_RECIPES, "JellyCube", true).getBoolean(true);
         Features.gelatin = config.get(CATEGORY_RECIPES, "Gelatin", true).getBoolean(true);
         Features.altBread = config.get(CATEGORY_RECIPES, "AlternateBread", true).getBoolean(true);
-        Features.easyPotions = config.get(CATEGORY_RECIPES, "easyPotions", true).getBoolean(true);
+        Features.easyPotions = config.get(CATEGORY_RECIPES, "easyPotions", false).getBoolean(false);
+        Features.altCookie = config.get(CATEGORY_RECIPES, "AlternateCookie", true).getBoolean(true);
 
         config.save();
 	}
