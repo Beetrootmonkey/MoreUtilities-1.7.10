@@ -28,6 +28,8 @@ public class Items
 	public static Item jelly_cube;
 	public static Item flour;
 	public static Item dough;
+	public static Item cocoa_powder;
+	public static Item raw_cookie;
 	public static Item gelatin;
 	public static Item jelly_cube_mining;
 	public static Item jelly_cube_combat;
@@ -52,6 +54,8 @@ public class Items
 		jelly_cube = new ItemFood(3, 1f, false).setUnlocalizedName("jelly_cube").setTextureName(Reference.MOD_ID + ":jelly_cube");
 		flour = new Item().setUnlocalizedName("flour").setTextureName(Reference.MOD_ID + ":flour");
 		dough = new Item().setUnlocalizedName("dough").setTextureName(Reference.MOD_ID + ":dough");
+		cocoa_powder = new Item().setUnlocalizedName("cocoa_powder").setTextureName(Reference.MOD_ID + ":cocoa_powder");
+		raw_cookie = new Item().setUnlocalizedName("raw_cookie").setTextureName(Reference.MOD_ID + ":raw_cookie");
 		gelatin = new Item().setUnlocalizedName("gelatin").setTextureName(Reference.MOD_ID + ":gelatin");
 		jelly_cube_mining = new ItemBuff(4, 1f, 2400, 1, 1, 3, 16).setUnlocalizedName("jelly_cube_mining").setTextureName(Reference.MOD_ID + ":jelly_cube_mining");
 		jelly_cube_combat = new ItemBuff(4, 1f, 2400, 1, 5, 10, 11).setUnlocalizedName("jelly_cube_combat").setTextureName(Reference.MOD_ID + ":jelly_cube_combat");
@@ -83,6 +87,8 @@ public class Items
 		registerItem(jelly_cube);
 		registerItem(flour);
 		registerItem(dough);
+		registerItem(cocoa_powder);
+		registerItem(raw_cookie);
 		registerItem(gelatin);
 		registerItem(jelly_cube_mining);
 		registerItem(jelly_cube_combat);
@@ -117,6 +123,13 @@ public class Items
 	public static void oreRegistration()
     {
          OreDictionary.registerOre("slimeball", gelatin);
+         OreDictionary.registerOre("foodDough", dough);
+         OreDictionary.registerOre("dustWheat", flour);
+         OreDictionary.registerOre("foodFlour", flour);
+         OreDictionary.registerOre("dustCocoa", cocoa_powder);
+         OreDictionary.registerOre("dye", cocoa_powder);
+         OreDictionary.registerOre("dyeBrown", cocoa_powder);
+         OreDictionary.registerOre("foodCocoapowder", cocoa_powder);
     }
 	
 	

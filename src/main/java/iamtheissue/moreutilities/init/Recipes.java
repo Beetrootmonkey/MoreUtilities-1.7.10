@@ -69,6 +69,12 @@ public class Recipes
 			GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.jelly_cube_sneaking), "slimeball", new ItemStack(net.minecraft.init.Items.sugar)
 					, "dustRedstone", "dustGlowstone", new ItemStack(net.minecraft.init.Items.poisonous_potato)));
 		}
+		if(Features.altCookie)
+		{
+			GameRegistry.addShapelessRecipe(new ItemStack(Items.cocoa_powder), new ItemStack(net.minecraft.init.Items.dye, 1, 3));
+			GameRegistry.addShapelessRecipe(new ItemStack(Items.raw_cookie, 4), new ItemStack(Items.dough), new ItemStack(Items.cocoa_powder));
+			GameRegistry.addSmelting(Items.raw_cookie, new ItemStack(net.minecraft.init.Items.cookie), 0.35f);
+		}
 		
 						
 		

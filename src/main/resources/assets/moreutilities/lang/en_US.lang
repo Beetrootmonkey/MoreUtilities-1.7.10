@@ -17,3 +17,5 @@ item.jelly_cube_mining.name=Jelly Cube (Mining)
 item.jelly_cube_combat.name=Jelly Cube (Combat)
 item.jelly_cube_survival.name=Jelly Cube (Survival)
 item.jelly_cube_sneaking.name=Jelly Cube (Sneaking)
+items.cocoa_powder.name=Cocoa Powder
+items.raw_cookie.name=Raw Cookie

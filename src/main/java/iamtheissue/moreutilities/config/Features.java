@@ -12,6 +12,7 @@ public class Features
 	public static boolean jellyCube = true;
 	public static boolean gelatin = true;
 	public static boolean altBread = true;
-	public static boolean easyPotions = true;
+	public static boolean easyPotions = false;
+	public static boolean altCookie = true;
 	
 }
